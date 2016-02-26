@@ -29,6 +29,7 @@ namespace AbstractFactory
 
         public Client(AbsFactory factory)
         {
+            // Абстрагирования процессов инстанцирования
             _water = factory.CreateWater();
             _bottle = factory.CreateBottle();
             _label = factory.CreateLabel();
@@ -36,6 +37,7 @@ namespace AbstractFactory
 
         public void Run()
         {
+            // Абстрагирование вариантов использования
             _bottle.Interact(_water);
             _bottle.Interact(_label);
         }
