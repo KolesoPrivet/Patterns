@@ -45,6 +45,7 @@ namespace FactoryMethod
         public ConcreteProduct()
         {
             Console.WriteLine(GetType());
+            Console.WriteLine(GetHashCode());
         }
     }
 }
